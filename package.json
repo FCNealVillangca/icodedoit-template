@@ -1,0 +1,9 @@
+{
+  "name": "icodedoit",
+  "version": "1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

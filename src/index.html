@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js'></script>
+</head>
+
+<body class="bg-white">
+
+  <!-- NAVIGATION -->
+  <div class="w-full fixed top-0 bg-white shadow-md">
+    <div class="container items-center mx-auto flex py-2 px-4">
+      <div>
+        <!-- <img src="herologo.png" alt="" class="h-8"> -->
+        <h1 class="font-bold">iCodeDoit</h1>
+      </div>
+      <div class="flex ml-auto bg-pink-200">
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Home</button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Snippet</button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Questions</button>
+      </div>
+      <div class="flex ml-auto">
+        <button class="ml-2 flex items-center">
+          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover"
+            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg" alt="">
+          <span class="ml-2">John Doe</span>
+        </button>
+        <!-- <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          Sign In
+        </button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          Sign Up
+        </button> -->
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN SECTION -->
+  <div class="w-full min-h-screen flex flex-col items-stretch">
+
+    <!-- content -->
+    <div class="w-full flex-grow flex flex-col items-stretch h-full">
+
+
+      <div class="container px-4 mx-auto flex-grow h-0 justify-center flex pt-12">
+
+        <!-- Previous Button -->
+        <button class="bg-red-300 p-2 flex items-center">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <!-- left panel -->
+        <div class="flex flex-col lg:flex-row overflow-auto">
+          <div class="w-full lg:w-6/12 bg-green-200 p-4">
+            <div class="bg-yellow-300 h-full flex flex-col items-stretch">
+
+              <!-- code mirror -->
+              <div class="h-[50vh] lg:h-0 lg:flex-grow">
+                <div class="editorContainer bg-gray-300" style="height: 100%!important;">
+                </div>
+              </div>
+
+              <!-- codepanel header -->
+              <div class="pt-4">
+                <h1 class="text-lg font-bold text-gray-800">Lorem Ipsum Dolor Sit Amet</h1>
+                <p class="text-gray-500">Posted by: John Doe</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- right panel -->
+          <div class="w-full lg:w-6/12 bg-green-200 pt-0 pl-4 pb-4 pr-2 lg:pl-0 lg:pt-4">
+            <div class="bg-yellow-300 h-full ">
+              <div class="h-full overflow-auto pr-2">
+                <p class="mb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem voluptas exercitationem
+                  saepe
+                  reiciendis eligendi temporibus recusandae, repudiandae ex dolorum numquam, quo sint, ipsa excepturi!
+                  Animi doloribus sunt omnis fugiat!
+                </p>
+
+                <!-- comment section -->
+                <!-- Comment Form -->
+                <h1 class="text-lg font-bold mb-2">Comments</h1>
+                <form class="mb-4">
+                  <textarea class="w-full mb-2" name="content"></textarea>
+                  <button class="py-1 px-2 bg-gray-200 hover:bg-gray-300">Submit</button>
+                </form>
+
+                <!-- comment item -->
+                <div class="flex">
+                  <div class="bg-white flex flex-col justify-center items-center">
+                    <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover mb-2"
+                      src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg" alt="avatar image">
+                    <div class="w-[1px] flex-1 border-l border-gray-600"></div>
+                  </div>
+
+                  <div class="flex-1 pl-4">
+                    <div class="flex">
+                      <h2 class="font-bold text-gray-800">John Doe</h2>
+                      <span class="ml-2 text-gray-600">Posted: 10 days ago</span>
+                    </div>
+                    <p class="text-gray-600">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sed minima, aliquid perferendis
+                      iste velit nemo, similique ad dolorum, repellendus corrupti repellat saepe iusto? Corporis
+                      aspernatur natus ipsum voluptatum maiores?
+                    </p>
+                    <div class="mt-2 mb-2">
+                      <button class="text-gray-500 hover:text-gray-800 mr-2">Replies</button>
+                      <button class="text-gray-500 hover:text-gray-800 mr-2">Edit</button>
+                      <button class="text-gray-500 hover:text-gray-800 mr-2">Delete</button>
+                    </div>
+
+                    <div class="">
+                      <form class="mb-4">
+                        <textarea class="w-full mb-2" name="content"></textarea>
+                        <button class="py-1 px-2 bg-gray-200 hover:bg-gray-300">Submit</button>
+                      </form>
+                      <!-- <p>No Replies</p> -->
+
+                      <!-- replies -->
+                      <div class="flex mb-4">
+                        <div class="bg-white flex flex-col justify-center items-center">
+                          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover mb-2"
+                            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg"
+                            alt="avatar image">
+                          <div class="w-[1px] flex-1 border-l border-gray-600"></div>
+                        </div>
+
+                        <div class="flex-1 pl-4">
+                          <div class="flex">
+                            <h2 class="font-bold text-gray-800">John Doe</h2>
+                            <span class="ml-2 text-gray-600">Posted: 10 days ago</span>
+                          </div>
+                          <p class="text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sed minima, aliquid
+                            perferendis
+                            iste velit nemo, similique ad dolorum, repellendus corrupti repellat saepe iusto? Corporis
+                            aspernatur natus ipsum voluptatum maiores?
+                          </p>
+                        </div>
+                      </div>
+                      <!-- replies -->
+
+                      <!-- replies -->
+                      <div class="flex mb-4">
+                        <div class="bg-white flex flex-col justify-center items-center">
+                          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover mb-2"
+                            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg"
+                            alt="avatar image">
+                          <div class="w-[1px] flex-1 border-l border-gray-600"></div>
+                        </div>
+
+                        <div class="flex-1 pl-4">
+                          <div class="flex">
+                            <h2 class="font-bold text-gray-800">John Doe</h2>
+                            <span class="ml-2 text-gray-600">Posted: 10 days ago</span>
+                          </div>
+                          <p class="text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sed minima, aliquid
+                            perferendis
+                            iste velit nemo, similique ad dolorum, repellendus corrupti repellat saepe iusto? Corporis
+                            aspernatur natus ipsum voluptatum maiores?
+                          </p>
+                          <div class="mt-2">
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Edit</button>
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- replies -->
+
+                      <!-- replies -->
+                      <div class="flex mb-4">
+                        <div class="bg-white flex flex-col justify-center items-center">
+                          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover mb-2"
+                            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg"
+                            alt="avatar image">
+                          <div class="w-[1px] flex-1 border-l border-gray-600"></div>
+                        </div>
+
+                        <div class="flex-1 pl-4">
+                          <div class="flex">
+                            <h2 class="font-bold text-gray-800">John Doe</h2>
+                            <span class="ml-2 text-gray-600">Posted: 10 days ago</span>
+                          </div>
+                          <p class="text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sed minima, aliquid
+                            perferendis
+                            iste velit nemo, similique ad dolorum, repellendus corrupti repellat saepe iusto? Corporis
+                            aspernatur natus ipsum voluptatum maiores?
+                          </p>
+                          <div class="mt-2">
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Edit</button>
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- replies -->
+
+                      <!-- replies -->
+                      <div class="flex mb-4">
+                        <div class="bg-white flex flex-col justify-center items-center">
+                          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover mb-2"
+                            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg"
+                            alt="avatar image">
+                          <div class="w-[1px] flex-1 border-l border-gray-600"></div>
+                        </div>
+
+                        <div class="flex-1 pl-4">
+                          <div class="flex">
+                            <h2 class="font-bold text-gray-800">John Doe</h2>
+                            <span class="ml-2 text-gray-600">Posted: 10 days ago</span>
+                          </div>
+                          <p class="text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sed minima, aliquid
+                            perferendis
+                            iste velit nemo, similique ad dolorum, repellendus corrupti repellat saepe iusto? Corporis
+                            aspernatur natus ipsum voluptatum maiores?
+                          </p>
+                          <div class="mt-2">
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Edit</button>
+                            <button class="text-gray-500 hover:text-gray-800 mr-2">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- replies -->
+
+
+
+                      <div class="border-t pt-2 w-full flex justify-center">
+                        <button class="text-gray-500 hover:text-gray-800 mr-2">Load More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Next Button -->
+        <button class="bg-red-300 p-2 flex items-center">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full mt-auto bg-white shadow-lg border-t">
+      <div class="py-2 px-4 container mx-auto flex items-center">
+        <span>All rights reserved 2024</span>
+        <div class="flex items-center ml-auto">
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">terms</button>
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">privacy</button>
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var editorContainer = document.querySelector('.editorContainer')
+  CodeMirror(editorContainer, {
+    lineNumbers: true,
+    mode: 'javascript',
+    value: 'var b = 3;',
+    innerHeight: "100%"
+  }).setSize("100%", "100%");
+</script>
+
+</html>

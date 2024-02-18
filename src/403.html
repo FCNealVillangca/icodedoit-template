@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js'></script>
+</head>
+
+<body class="bg-white">
+
+  <!-- NAVIGATION -->
+  <div class="w-full fixed top-0 bg-white shadow-md">
+    <div class="container items-center mx-auto flex py-2 px-4">
+      <div>
+        <!-- <img src="herologo.png" alt="" class="h-8"> -->
+        <h1 class="font-bold">iCodeDoit</h1>
+      </div>
+      <div class="flex ml-auto bg-pink-200">
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Home</button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Snippet</button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Questions</button>
+      </div>
+      <div class="flex ml-auto">
+        <button class="ml-2 flex items-center">
+          <img class="h-[32px] w-[32px] overflow-hidden rounded-full object-cover"
+            src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg" alt="">
+          <span class="ml-2">John Doe</span>
+        </button>
+        <!-- <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          Sign In
+        </button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          Sign Up
+        </button> -->
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-full min-h-screen flex flex-col items-stretch"> <!-- MAIN SECTION -->
+
+    <div class="w-full flex-grow flex flex-col items-stretch h-full"><!-- content -->
+      <div class="max-w-sm p-4 m-auto flex items-center flex-col md:flex-row text-gray-800">
+        <i class="text-8xl fa-regular fa-face-frown"></i>
+        <div class="md:pl-4">
+          <h2 class="text-4xl font-bold ">Error 403</h2>
+          <p>This page is forbidden</p>
+        </div>
+      </div>
+    </div><!-- content -->
+
+    <div class="w-full mt-auto bg-white shadow-lg border-t"><!-- footer -->
+      <div class="py-2 px-4 container mx-auto flex items-center">
+        <span>All rights reserved 2024</span>
+        <div class="flex items-center ml-auto">
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">terms</button>
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">privacy</button>
+          <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">contact</button>
+        </div>
+      </div>
+    </div><!-- footer -->
+
+  </div> <!-- MAIN SECTION -->
+
+</body>
+<script>
+  var editorContainer = document.querySelector('.editorContainer')
+  CodeMirror(editorContainer, {
+    lineNumbers: true,
+    mode: 'javascript',
+    value: 'var b = 3;',
+    innerHeight: "100%"
+  }).setSize("100%", "100%");
+</script>
+
+</html>
