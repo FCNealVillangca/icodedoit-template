@@ -14,17 +14,11 @@
 
 <body class="bg-white">
 
-  <!-- NAVIGATION -->
-  <div class="w-full fixed top-0 bg-white shadow-md">
+
+  <div class="w-full fixed top-0 bg-white border"> <!-- NAVIGATION -->
     <div class="container items-center mx-auto flex py-2 px-4">
       <div>
-        <!-- <img src="herologo.png" alt="" class="h-8"> -->
         <h1 class="font-bold">iCodeDoit</h1>
-      </div>
-      <div class="flex ml-auto bg-pink-200">
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Home</button>
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Snippet</button>
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">Questions</button>
       </div>
       <div class="flex ml-auto">
         <button class="ml-2 flex items-center">
@@ -32,64 +26,61 @@
             src="https://cdn.pixabay.com/photo/2020/11/21/11/17/houses-5763699_1280.jpg" alt="">
           <span class="ml-2">John Doe</span>
         </button>
-        <!-- <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
-          Sign In
-        </button>
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
-          Sign Up
-        </button> -->
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
-          <i class="fa-regular fa-moon"></i>
-        </button>
-        <button class="text-gray-500 hover:text-gray-800 ml-2 py-1">
-          <i class="fa-solid fa-bars"></i>
-        </button>
       </div>
     </div>
-  </div>
+  </div> <!-- NAVIGATION -->
 
 
   <div class="w-full min-h-screen flex flex-col items-stretch pt-12"> <!-- MAIN SECTION -->
 
-    <div class="w-full flex-grow flex flex-col items-stretch h-full py-4"><!-- content -->
+    <div class="w-full flex-grow flex flex-col items-stretch h-full p-4"><!-- content -->
       <form class="max-w-lg p-4 m-auto w-full text-gray-800 bg-white border rounded-xl shadow-md">
-        <h2 class="text-xl font-bold mb-4">Sign In</h2>
+        <h2 class="text-xl font-bold mb-4 text-[#4d138f]">
+          <i class="fa-solid fa-user-plus"></i>
+          <span class="ml-2">Create Account</span>
+        </h2>
+
+        <div class="w-full mb-4">
+          <label class="block mb-2" for="">First Name</label>
+          <input value="lorem" class="block w-full py-1 px-2 focus:outline-none border" type=" text">
+          <small class="text-red-600">this field is required</small>
+        </div>
+
+        <div class="w-full mb-4">
+          <label class="block mb-2" for="">Last Name</label>
+          <input class="block w-full py-1 px-2 focus:outline-none border" type=" text">
+          <small class="text-red-600">this field is required</small>
+        </div>
+
         <div class="w-full mb-4">
           <label class="block mb-2" for="">Email</label>
           <input class="block w-full py-1 px-2 focus:outline-none border" type=" text">
           <small class="text-red-600">this field is required</small>
         </div>
+
         <div class="w-full mb-4">
           <label class="block mb-2" for="">Password</label>
           <input class="block w-full py-1 px-2 focus:outline-none border" type=" text">
           <small class="text-red-600">this field is required</small>
         </div>
 
+        <div class="w-full mb-4">
+          <label class="block mb-2" for="">Retype Password</label>
+          <input class="block w-full py-1 px-2 focus:outline-none border" type=" text">
+          <small class="text-red-600">this field is required</small>
+        </div>
+
         <div class="mb-4">
-          <p>Not yet registered? <button>click here</button></p>
-          <p>Forgot password? <button>click here</button></p>
+          <p>already have an account? <button>click here</button></p>
         </div>
 
-        <button class="w-full py-1 px-2 bg-gray-200 mb-2 hover:bg-gray-300">Submit</button>
+        <button
+          class="w-full py-1 px-2 bg-[#4d138f] text-white mb-2 hover:bg-[#5a2b8f]  flex justify-center items-center">
+          <!-- <span>Submit</span> -->
+          <i class="fa-solid fa-spinner animate-spin"></i>
+          <span class="ml-2"> Loading... </span>
+        </button>
 
-        <div class="w-full flex justify-stretch items-center mb-2">
-          <span class="flex-1 bg-red-100 border-t h-[1px]"></span>
-          <p class="px-4">OR</p>
-          <span class="flex-1 bg-red-100 border-t h-[1px]"></span>
-        </div>
-
-        <button class="w-full py-1 px-2 bg-[#e23d34] text-white border mb-2 flex justify-center items-center">
-          <i class="fa-brands fa-google"></i>
-          <span class="ml-2"> Sign in with Google </span>
-        </button>
-        <button class="w-full py-1 px-2 bg-[#3479ea] text-white mb-2 flex justify-center items-center">
-          <i class="fa-brands fa-facebook-f"></i>
-          <span class="ml-2"> Sign in with Facebook </span>
-        </button>
-        <button class="w-full py-1 px-2 bg-[#212528] text-white mb-2 flex justify-center items-center">
-          <i class="fa-brands fa-github"></i>
-          <span class="ml-2"> Sign in with Github </span>
-        </button>
       </form>
     </div><!-- content -->
 
