@@ -6,13 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js'></script>
+    <style>
+        .poppins-thin {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .poppins-thin-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .poppins-extralight {
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .poppins-extralight-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-light-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-regular-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-medium-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-semibold-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-bold-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .poppins-extrabold-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .poppins-black {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .poppins-black-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+    </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-white poppins-light text-gray-600">
 
 
     <div class="w-full fixed top-0 bg-white shadow-md"> <!-- NAVIGATION -->
@@ -33,11 +147,53 @@
 
     <div class="w-full min-h-screen flex flex-col items-stretch pt-12"> <!-- MAIN SECTION -->
 
-        <div class="w-full flex-grow flex flex-col items-stretch h-full p-4"><!-- content -->
+        <div class="w-full flex-grow flex flex-col items-stretch h-full"><!-- content -->
+            <div class="w-full bg-gray-100 mb-4"> <!-- HERO -->
+                <div class="container mx-auto flex flex-col md:flex-row w-full justify-between px-4 py-8 items-center">
+                    <div class="w-full md:w-4/12 md:mr-4">
+                        <img class="w-full"
+                            src="https://waterfieldtech.com/wp-content/uploads/2019/02/placeholder-image-gray-3x2.png"
+                            alt="">
+                    </div>
+                    <div class="w-full md:max-w-md md:w-8/12">
+                        <h1 class="uppercase font-semibold text-3xl mb-2 text-[#7795ff]">If IcodeDoIt! so can you!</h1>
+                        <p class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga ex officiis
+                            ea quas. Dignissimos
+                        </p>
+                        <div>
+                            <button class="h-8 w-8 text-white bg-[#7795ff] rounded-full mr-2">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </button>
+                            <button class="h-8 w-8 text-white bg-[#7795ff] rounded-full mr-2">
+                                <i class="fa-brands fa-github-alt"></i>
+                            </button>
+                            <button class="h-8 w-8 text-white bg-[#7795ff] rounded-full mr-2">
+                                <i class="fa-solid fa-code"></i>
+                            </button>
+                            <button class="h-8 w-8 text-white bg-[#7795ff] rounded-full mr-2">
+                                <i class="fa-brands fa-youtube"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- HERO -->
 
-
-
-
+            <div class="container mx-auto px-4 flex">
+                <div class="w-full md:w-4/12 lg:w-2/12 hidden md:block">
+                    <button class="w-full text-left bg-gray-200">Python</button>
+                    <button class="w-full text-left bg-gray-200">C++</button>
+                    <button class="w-full text-left bg-gray-200">Php</button>
+                </div>
+                <div class="w-full md:w-8/12 lg:w-10/12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem optio veniam distinctio
+                        velit
+                        odio, cumque aliquid dolorum dolorem pariatur error temporibus fuga dicta unde cum, fugit
+                        corporis,
+                        eveniet similique.
+                    </p>
+                </div>
+            </div>
 
         </div><!-- content -->
 
@@ -55,14 +211,5 @@
     </div> <!-- MAIN SECTION -->
 
 </body>
-<script>
-    var editorContainer = document.querySelector('.editorContainer')
-    CodeMirror(editorContainer, {
-        lineNumbers: true,
-        mode: 'javascript',
-        value: 'var b = 3;',
-        innerHeight: "100%"
-    }).setSize("100%", "100%");
-</script>
 
 </html>
